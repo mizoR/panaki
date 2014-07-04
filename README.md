@@ -1,7 +1,5 @@
 # Panaki
 
-FIXME
-
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/panaki/fork )
