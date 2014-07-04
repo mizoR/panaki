@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+require 'panaki'
+
+def usage
+  puts <<EOS
+usage:
+panaki HIRAGANA_WORD
+EOS
+end
+
+word = ARGV[0].to_s
+
+if word.empty?
+  usage
+  exit 1
+end
+
+YAGI = Panaki::AI.new
+YAGI.hear(ARGV[0]).think.pritty_print
+
+exit 0
