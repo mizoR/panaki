@@ -167,7 +167,9 @@ module Panaki
     end
 
     def say
-      # FIXME
+      if !answer_string.empty?
+        system "say #{answer_string}"
+      end
 
       self
     end
@@ -196,7 +198,7 @@ module Panaki
 
     def answer_string
       @answer_list.map { |answer|
-        answer.map(&:word).join(' ')
+        answer.map(&:word).join('、')
       }.join("\n")
     end
   end

@@ -16,6 +16,6 @@ if word.empty?
 end
 
 YAGI = Panaki::AI.new
-YAGI.hear(ARGV[0]).think.pritty_print
+YAGI.hear(ARGV[0]).think.pritty_print.say
 
 exit 0
